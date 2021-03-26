@@ -19,6 +19,6 @@ public class UIManager : Singleton<UIManager>
     
     private void Awake()
     {
-        
+        this.gameObject.SetActive(false);
     }
 }
