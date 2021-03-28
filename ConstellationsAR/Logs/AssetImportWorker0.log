@@ -86,3 +86,4 @@ Received Import Request.
 Start importing Assets/Scripts/Database/StarDatabaseLoader.cs using Guid(b99e7f4faea22d643ba63c3e57022f3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a398f5349abf41113481a26c6e1ae60') in 0.080050 seconds
   Import took 0.084773 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
