@@ -1,11 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class StarDatabaseLoader : DatabaseLoader
 {
-    public override void OnDatabaseLoad(string path)
+    public string path;
+    [HideInInspector]
+    public StarData[] stars;
+
+    public int leng;
+
+    private void Awake()
     {
-        throw new System.NotImplementedException();
+        OnDatabaseLoad();
+    }
+
+    public override void OnDatabaseLoad()
+    {
+        string[] lines = IOUtility.OpenLines(path);
+        stars = lines.
+            Skip(1).
+            Select(l => new StarData(l)).ToArray();
+
+        leng = stars.Length;
     }
 }

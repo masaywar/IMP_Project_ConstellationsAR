@@ -4,7 +4,5 @@ using UnityEngine;
 
 public abstract class DatabaseLoader : Singleton<DatabaseLoader>
 {
-    public string filepath;
-
-    public abstract void OnDatabaseLoad(string path);
+    public abstract void OnDatabaseLoad();
 }
