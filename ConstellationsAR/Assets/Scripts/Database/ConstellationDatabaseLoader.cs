@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ConstellationDatabaseLoader : DatabaseLoader
 {
-    public override void OnDatabaseLoad(string path)
+    public override void OnDatabaseLoad()
     {
         throw new System.NotImplementedException();
     }
