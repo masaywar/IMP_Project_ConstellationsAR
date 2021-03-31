@@ -7,11 +7,17 @@ using System.Linq;
 public class StarMeshGenerator : AssetGenerator
 {
     public StarDatabaseLoader m_cachedStarDBLoader;
-
+    [Range(2000, 30000)]
+    public int starsPerMesh = 10000;
     protected override void GenerateAsset()
     {
-        var mesh = CreateMesh(m_cachedStarDBLoader.stars, "stars");
-        AssetUtility.SaveMeshAsset(folderPath, mesh);
+        for (int i = 0; i < m_cachedStarDBLoader.stars.Length; i += starsPerMesh)
+        {
+            string name = "stars " + (i / starsPerMesh);
+            StarData[] subStars = m_cachedStarDBLoader.stars.SubArray(i, starsPerMesh).ToArray();
+            var mesh = CreateMesh(subStars, name);
+            AssetUtility.SaveMeshAsset(folderPath, mesh);
+        }
     }
 
     Mesh CreateMesh(StarData[] stars, string name) 
