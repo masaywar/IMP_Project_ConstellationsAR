@@ -1,0 +1,883 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.0f1 (c7b5465681fb) revision 13088070'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Education; OS build 19042.867; Version 2009; 64bit' Language: 'ko' Physical Memory: 16316 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+D:\Unity\2020.3.0f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/L/Documents/GitHub/IMP_Project_ConstellationsAR/ConstellationsAR
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+3618
+Successfully changed project path to: C:/Users/L/Documents/GitHub/IMP_Project_ConstellationsAR/ConstellationsAR
+C:/Users/L/Documents/GitHub/IMP_Project_ConstellationsAR/ConstellationsAR
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 100.53 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 1.72 ms.
+Initialize engine version: 2020.3.0f1 (c7b5465681fb)
+[Subsystems] Discovering subsystems at path D:/Unity/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/L/Documents/GitHub/IMP_Project_ConstellationsAR/ConstellationsAR/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Radeon RX 560 Series (ID=0x67ff)
+    Vendor:   
+    VRAM:     2027 MB
+    Driver:   27.20.1034.6
+Initialize mono
+Mono path[0] = 'D:/Unity/2020.3.0f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Unity/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56448
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/2020.3.0f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/Unity/2020.3.0f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: D:/Unity/2020.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: D:/Unity/2020.3.0f1/Editor/Data/PlaybackEngines/LuminSupport/UnityEditor.Lumin.Extensions.dll
+Registered in 0.002517 seconds.
+Native extension for Lumin target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 73.48 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.482 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.012769 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 72.89 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.240 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.87 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.15 ms.
+Unloading 2451 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.6 MB.
+System memory in use after: 102.7 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2880.
+Total: 2.834600 ms (FindLiveObjects: 0.321300 ms CreateObjectMapping: 0.068500 ms MarkObjects: 2.325500 ms  DeleteObjects: 0.117200 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/TextMesh Pro
+  artifactKey: Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro using Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '166def47635274b096a9fd1d3c5fb628') in 0.013304 seconds
+  Import took 0.017449 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Plugins
+  artifactKey: Guid(a3397ca59aa2845d9b6915a23e597665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins using Guid(a3397ca59aa2845d9b6915a23e597665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f86e7bf44b2e199e36696a2ae023ee72') in 0.009760 seconds
+  Import took 0.013433 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/StreamingAssets
+  artifactKey: Guid(c335af9dee120ff4bb03b6c8058165ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets using Guid(c335af9dee120ff4bb03b6c8058165ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6167751bb33630c1485de6fdaa69a75') in 0.009884 seconds
+  Import took 0.014035 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/UITexture
+  artifactKey: Guid(3921210097ca347fe80202ee32f07c3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UITexture using Guid(3921210097ca347fe80202ee32f07c3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5019bbc84127fd7ef7fb229de077aefb') in 0.009723 seconds
+  Import took 0.013895 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/UIAnimation
+  artifactKey: Guid(015581c3726834dc4b4ea142f1fbcb3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UIAnimation using Guid(015581c3726834dc4b4ea142f1fbcb3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b91c5981acabb49bb0472d5334ef73c') in 0.009778 seconds
+  Import took 0.013740 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.408257 seconds.
+  path: Assets/Resources/Prefabs
+  artifactKey: Guid(3c91e8941b4db0c42a217c75cd162afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs using Guid(3c91e8941b4db0c42a217c75cd162afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35b6d3c351a4b558bd9d6e8e3bcb7401') in 0.010138 seconds
+  Import took 0.014191 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.763762 seconds.
+  path: Assets/Resources/Materials
+  artifactKey: Guid(5780a70a3ddc2c0489108a42a49885e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Materials using Guid(5780a70a3ddc2c0489108a42a49885e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '814cbc82b323ddd9c4e33e3150100874') in 0.010192 seconds
+  Import took 0.014505 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.585620 seconds.
+  path: Assets/Resources/Shader
+  artifactKey: Guid(912e542f03bacbf46abb13d5ff47c883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader using Guid(912e542f03bacbf46abb13d5ff47c883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cc2e041e9c25e43d0370071a1288e26') in 0.010122 seconds
+  Import took 0.014144 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.396684 seconds.
+  path: Assets/Resources/Shader/NewSurfaceShader.shader
+  artifactKey: Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/NewSurfaceShader.shader using Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb0bd95cc63cf6e658c280df9e6656b2') in 0.066349 seconds
+  Import took 0.070819 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.558620 seconds.
+  path: Assets/Resources/Shader/NewSurfaceShader.shader
+  artifactKey: Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/NewSurfaceShader.shader using Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb0bd95cc63cf6e658c280df9e6656b2') in 0.007231 seconds
+  Import took 0.011781 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.985174 seconds.
+  path: Assets/Resources/Shader/StarShader.shader
+  artifactKey: Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/StarShader.shader using Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a75bdc37926a6767debd1f0491b5325') in 0.013200 seconds
+  Import took 0.017780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.958008 seconds.
+  path: Assets/Resources/Shader/StarShader.shader
+  artifactKey: Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/StarShader.shader using Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6537bd32c1649d5503b588d4f97f554') in 0.011888 seconds
+  Import took 0.016631 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 142.545338 seconds.
+  path: Assets/Resources/Shader/a.mat
+  artifactKey: Guid(7b0c779cfea0d6343b0ee1ff5c209e4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/a.mat using Guid(7b0c779cfea0d6343b0ee1ff5c209e4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63390389e6e8ab6b96e284febf1da794') in 0.158295 seconds
+  Import took 0.163146 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.575487 seconds.
+  path: Assets/Resources/Shader/a.mat
+  artifactKey: Guid(7b0c779cfea0d6343b0ee1ff5c209e4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/a.mat using Guid(7b0c779cfea0d6343b0ee1ff5c209e4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eef5ec79e3e6000422b31187db4f1604') in 0.053403 seconds
+  Import took 0.062249 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1409.118888 seconds.
+  path: Assets/Resources/Shader/StarShader.shader
+  artifactKey: Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/StarShader.shader using Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05ec556b2ce61cb7fead68447fb46d3a') in 0.006933 seconds
+  Import took 0.011432 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001028 seconds.
+  path: Assets/Resources/Shader/StarShader.shader
+  artifactKey: Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/StarShader.shader using Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05ec556b2ce61cb7fead68447fb46d3a') in 0.009354 seconds
+  Import took 0.013443 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 585.005874 seconds.
+  path: Assets/Resources/Shader/StarShader.shader
+  artifactKey: Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/StarShader.shader using Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bcbd9dab4b55e8f428a1935976584b7') in 0.006970 seconds
+  Import took 0.011725 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.363952 seconds.
+  path: Assets/Resources/Shader/NewShaderVariants.shadervariants
+  artifactKey: Guid(a6e520c3259a01d498367eb210e9ea1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/NewShaderVariants.shadervariants using Guid(a6e520c3259a01d498367eb210e9ea1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6b41f1cea86e7c4c9cea35a925a6462') in 0.025480 seconds
+  Import took 0.031803 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 72.949023 seconds.
+  path: Assets/Resources/Shader/StarShader.shader
+  artifactKey: Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/StarShader.shader using Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e37bb8c27fb6cabf96c20f34c5194f9b') in 0.009794 seconds
+  Import took 0.014212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004507 seconds.
+  path: Assets/Resources/Shader/StarShader.shader
+  artifactKey: Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/StarShader.shader using Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e37bb8c27fb6cabf96c20f34c5194f9b') in 0.009711 seconds
+  Import took 0.014655 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 53.282678 seconds.
+  path: Assets/Resources/Shader/NewUnlitShader.shader
+  artifactKey: Guid(46d59a1017f5d0e47a202226785f2888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/NewUnlitShader.shader using Guid(46d59a1017f5d0e47a202226785f2888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15ca3ef3c0c098dc65620ee4c6d50a38') in 0.011626 seconds
+  Import took 0.016027 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.841613 seconds.
+  path: Assets/Resources/Shader/NewUnlitShader.shader
+  artifactKey: Guid(46d59a1017f5d0e47a202226785f2888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/NewUnlitShader.shader using Guid(46d59a1017f5d0e47a202226785f2888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb4d6e3cdd778b9bcff9156226a5bba0') in 0.009425 seconds
+  Import took 0.013983 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001473 seconds.
+  path: Assets/Resources/Shader/NewUnlitShader.shader
+  artifactKey: Guid(46d59a1017f5d0e47a202226785f2888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/NewUnlitShader.shader using Guid(46d59a1017f5d0e47a202226785f2888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb4d6e3cdd778b9bcff9156226a5bba0') in 0.009433 seconds
+  Import took 0.014239 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.520522 seconds.
+  path: Assets/Resources/Shader/Utility.cginc
+  artifactKey: Guid(46d59a1017f5d0e47a202226785f2888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/Utility.cginc using Guid(46d59a1017f5d0e47a202226785f2888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '307428c312435311d3b6fc5db83154c6') in 0.015358 seconds
+  Import took 0.019782 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 202.021507 seconds.
+  path: Assets/Resources/Shader/Utility.cginc
+  artifactKey: Guid(46d59a1017f5d0e47a202226785f2888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/Utility.cginc using Guid(46d59a1017f5d0e47a202226785f2888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e4e9c5c0c568c6d5de662cf98d47e97') in 0.010134 seconds
+  Import took 0.014442 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.025756 seconds.
+  path: Assets/Resources/Shader/Utility.cginc
+  artifactKey: Guid(46d59a1017f5d0e47a202226785f2888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/Utility.cginc using Guid(46d59a1017f5d0e47a202226785f2888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e4e9c5c0c568c6d5de662cf98d47e97') in 0.009763 seconds
+  Import took 0.013987 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 102.731106 seconds.
+  path: Assets/Resources/Shader/StarShader.shader
+  artifactKey: Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/StarShader.shader using Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d838d05d5ffac0a0d05724192c4252a') in 0.015175 seconds
+  Import took 0.022705 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001807 seconds.
+  path: Assets/Resources/Shader/StarShader.shader
+  artifactKey: Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/StarShader.shader using Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d838d05d5ffac0a0d05724192c4252a') in 0.016456 seconds
+  Import took 0.022919 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 113.629745 seconds.
+  path: Assets/Resources/Shader/StarShader.shader
+  artifactKey: Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/StarShader.shader using Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fce77b471c8e6e3d3290a41963682c9f') in 0.009734 seconds
+  Import took 0.014382 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 152.266860 seconds.
+  path: Assets/Resources/Shader/StarShader.shader
+  artifactKey: Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/StarShader.shader using Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3782adee3bfbebfeaa236811514e7a9a') in 0.009674 seconds
+  Import took 0.014222 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 145.541115 seconds.
+  path: Assets/Resources/Shader/StarShader.shader
+  artifactKey: Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/StarShader.shader using Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4168aeb8ac7f67555b89f1680df1ac6b') in 0.010319 seconds
+  Import took 0.015265 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001063 seconds.
+  path: Assets/Resources/Shader/StarShader.shader
+  artifactKey: Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/StarShader.shader using Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4168aeb8ac7f67555b89f1680df1ac6b') in 0.009712 seconds
+  Import took 0.013704 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 52.938822 seconds.
+  path: Assets/Resources/Shader/StarShader.shader
+  artifactKey: Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/StarShader.shader using Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b2920525b3e683bc4b23365a3da9a8f') in 0.009940 seconds
+  Import took 0.014238 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.924941 seconds.
+  path: Assets/Resources/Shader/StarShader.shader
+  artifactKey: Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/StarShader.shader using Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da082c92f38845d8c4f681759fe86cbe') in 0.009589 seconds
+  Import took 0.014086 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.542509 seconds.
+  path: Assets/Resources/Shader/StarShader.shader
+  artifactKey: Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/StarShader.shader using Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1c7ce8e6ced8bf47046add099ad8064') in 0.009577 seconds
+  Import took 0.013800 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.317389 seconds.
+  path: Assets/Resources/Shader/StarShader.shader
+  artifactKey: Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/StarShader.shader using Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af64d8bc40496d1b7f2261d42af00afd') in 0.015334 seconds
+  Import took 0.020540 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.690509 seconds.
+  path: Assets/Resources/Shader/StarShader.shader
+  artifactKey: Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/StarShader.shader using Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a42df95c00541794b2245882e99cf74e') in 0.009622 seconds
+  Import took 0.014763 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 114.033902 seconds.
+  path: Assets/Resources/Shader/StarShader.shader
+  artifactKey: Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/StarShader.shader using Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19f3a02b4b5f845eee58b8e5ec674cfc') in 0.009815 seconds
+  Import took 0.014583 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001184 seconds.
+  path: Assets/Resources/Shader/StarShader.shader
+  artifactKey: Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/StarShader.shader using Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19f3a02b4b5f845eee58b8e5ec674cfc') in 0.009239 seconds
+  Import took 0.013646 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.677214 seconds.
+  path: Assets/Resources/Shader/StarShader.shader
+  artifactKey: Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/StarShader.shader using Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c0328483ad16c90d19b221c705b01f8') in 0.010041 seconds
+  Import took 0.014547 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.000720 seconds.
+  path: Assets/Resources/Shader/StarShader.shader
+  artifactKey: Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/StarShader.shader using Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd9b600bc602bddfc7306744c3cfd2b9') in 0.009605 seconds
+  Import took 0.013808 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002317 seconds.
+  path: Assets/Resources/Shader/StarShader.shader
+  artifactKey: Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/StarShader.shader using Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd9b600bc602bddfc7306744c3cfd2b9') in 0.010220 seconds
+  Import took 0.014418 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.366396 seconds.
+  path: Assets/Resources/Shader/StarShader.shader
+  artifactKey: Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/StarShader.shader using Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee9f51d8b62fed7ab75448f502a9f312') in 0.010446 seconds
+  Import took 0.015260 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001727 seconds.
+  path: Assets/Resources/Shader/StarShader.shader
+  artifactKey: Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/StarShader.shader using Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee9f51d8b62fed7ab75448f502a9f312') in 0.009639 seconds
+  Import took 0.013984 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.684612 seconds.
+  path: Assets/Resources/Shader/StarShader.shader
+  artifactKey: Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/StarShader.shader using Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51659b84ccdb55e2798807e2311e056a') in 0.009399 seconds
+  Import took 0.013568 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.204246 seconds.
+  path: Assets/Resources/Shader/StarShader.shader
+  artifactKey: Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/StarShader.shader using Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfb577331ce5181d88e743af4653ebac') in 0.009708 seconds
+  Import took 0.013850 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000598 seconds.
+  path: Assets/Resources/Shader/StarShader.shader
+  artifactKey: Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/StarShader.shader using Guid(1e716920a01220e41af9ac3b1899cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfb577331ce5181d88e743af4653ebac') in 0.009864 seconds
+  Import took 0.014456 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 184.330539 seconds.
+  path: Assets/Resources/Materials/Star.mat
+  artifactKey: Guid(095f180679cb80d44af68f248009c84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Materials/Star.mat using Guid(095f180679cb80d44af68f248009c84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50e83cca43c72d6fda7278360a3e1a63') in 0.099549 seconds
+  Import took 0.105870 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 125.891245 seconds.
+  path: Assets/Pre/StarPrefabGenerator.asset
+  artifactKey: Guid(794f6fd784b09554595b4d34938f2850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pre/StarPrefabGenerator.asset using Guid(794f6fd784b09554595b4d34938f2850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afb514d4f4c9f5f7892f682e1de9bc42') in 0.030567 seconds
+  Import took 0.036921 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003686 seconds.
+  path: Assets/Pre/StarPrefabGenerator.asset
+  artifactKey: Guid(794f6fd784b09554595b4d34938f2850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pre/StarPrefabGenerator.asset using Guid(794f6fd784b09554595b4d34938f2850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afb514d4f4c9f5f7892f682e1de9bc42') in 0.019826 seconds
+  Import took 0.026113 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 36.874823 seconds.
+  path: Assets/Pre/PrefabG/Star Prefab.prefab
+  artifactKey: Guid(b9c8550d16700524cabc7b75bcecf315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pre/PrefabG/Star Prefab.prefab using Guid(b9c8550d16700524cabc7b75bcecf315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'debe49ec222fc291fdcd5fd652469873') in 0.019359 seconds
+  Import took 0.023521 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.169837 seconds.
+  path: Assets/Resources/UIAnimation/CancelButtonController.controller
+  artifactKey: Guid(f0cc6b66770934334a874f484f06c140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/UIAnimation/CancelButtonController.controller using Guid(f0cc6b66770934334a874f484f06c140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '193cbf736342f500799e2b13b0ec9374') in 0.015591 seconds
+  Import took 0.019803 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 133.489077 seconds.
+  path: Assets/Pre/PrefabG/Star Prefab.prefab
+  artifactKey: Guid(b9c8550d16700524cabc7b75bcecf315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pre/PrefabG/Star Prefab.prefab using Guid(b9c8550d16700524cabc7b75bcecf315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f97218aa159a9bf17854aed82629309d') in 0.009626 seconds
+  Import took 0.013838 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.593701 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
+  artifactKey: Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat using Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '355eefba7f85554689a239c7efd2d27c') in 0.127960 seconds
+  Import took 0.132145 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/Resources/Materials/Star.mat
+  artifactKey: Guid(095f180679cb80d44af68f248009c84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Materials/Star.mat using Guid(095f180679cb80d44af68f248009c84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fbbb675b5db0eb4fca25189d0db7dc0') in 0.051470 seconds
+  Import took 0.055379 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89f4e3739378b1d0376ee0dfb2342653') in 0.083994 seconds
+  Import took 0.087963 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed9555f7686008eb496f39838470acec') in 0.053109 seconds
+  Import took 0.057057 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.600772 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a410187c0baf3dd4c75b68cb44da19ff') in 0.044886 seconds
+  Import took 0.049273 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
+  artifactKey: Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat using Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc5288524140b7be6187f0b2dbc5cbf9') in 0.116871 seconds
+  Import took 0.121030 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.881802 seconds.
+  path: Assets/Pre/PrefabG/Star Prefab.prefab
+  artifactKey: Guid(b9c8550d16700524cabc7b75bcecf315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pre/PrefabG/Star Prefab.prefab using Guid(b9c8550d16700524cabc7b75bcecf315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4482d26c0c63b76d90c347371a07cece') in 0.009704 seconds
+  Import took 0.014055 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012781 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.95 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.19 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.122 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.91 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.16 ms.
+Unloading 2409 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.6 MB.
+System memory in use after: 104.8 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2930.
+Total: 2.942200 ms (FindLiveObjects: 0.592800 ms CreateObjectMapping: 0.075900 ms MarkObjects: 2.189400 ms  DeleteObjects: 0.082100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012873 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.94 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.19 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.109 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.03 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.17 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.6 MB.
+System memory in use after: 104.8 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2934.
+Total: 2.777900 ms (FindLiveObjects: 0.375100 ms CreateObjectMapping: 0.074300 ms MarkObjects: 2.241400 ms  DeleteObjects: 0.085400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 448.111098 seconds.
+  path: Assets/Pre/StarPrefabGenerator.asset
+  artifactKey: Guid(794f6fd784b09554595b4d34938f2850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pre/StarPrefabGenerator.asset using Guid(794f6fd784b09554595b4d34938f2850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b303883739f3d8b05e2ee95a979e6de') in 0.037117 seconds
+  Import took 0.043520 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.615413 seconds.
+  path: Assets/Pre/PrefabG/StarPrefab.prefab
+  artifactKey: Guid(bfd7fb6276b48044d8a825284f3184e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pre/PrefabG/StarPrefab.prefab using Guid(bfd7fb6276b48044d8a825284f3184e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea1e923497569f343e8ef80ac01f8d43') in 0.025097 seconds
+  Import took 0.029444 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013329 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.92 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.19 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.094 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.95 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.16 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.6 MB.
+System memory in use after: 104.8 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2938.
+Total: 2.621400 ms (FindLiveObjects: 0.323800 ms CreateObjectMapping: 0.067600 ms MarkObjects: 2.146100 ms  DeleteObjects: 0.082500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 200.770744 seconds.
+  path: Assets/Pre/PrefabG/StarPrefab.prefab
+  artifactKey: Guid(bfd7fb6276b48044d8a825284f3184e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pre/PrefabG/StarPrefab.prefab using Guid(bfd7fb6276b48044d8a825284f3184e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39c2680a6ef45f72615ad23ca88d99ec') in 0.031912 seconds
+  Import took 0.036141 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012739 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.96 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.19 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.098 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.92 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.15 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.7 MB.
+System memory in use after: 104.8 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2942.
+Total: 3.056500 ms (FindLiveObjects: 0.536400 ms CreateObjectMapping: 0.147600 ms MarkObjects: 2.280300 ms  DeleteObjects: 0.091000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 62.124002 seconds.
+  path: Assets/Resources/Shader/Utility.cginc
+  artifactKey: Guid(46d59a1017f5d0e47a202226785f2888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Shader/Utility.cginc using Guid(46d59a1017f5d0e47a202226785f2888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18eff44974d9ef21dd869a13098705ec') in 0.019567 seconds
+  Import took 0.023775 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.466480 seconds.
+  path: Assets/Pre/PrefabG/StarPrefab.prefab
+  artifactKey: Guid(bfd7fb6276b48044d8a825284f3184e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pre/PrefabG/StarPrefab.prefab using Guid(bfd7fb6276b48044d8a825284f3184e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33f17211b5ccc924a7e3957f52af98e9') in 0.021983 seconds
+  Import took 0.026517 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.506650 seconds.
+  path: Assets/Pre/PrefabG/StarPrefab.prefab
+  artifactKey: Guid(bfd7fb6276b48044d8a825284f3184e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pre/PrefabG/StarPrefab.prefab using Guid(bfd7fb6276b48044d8a825284f3184e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfe7270180dca0c2c4701554cb245fb2') in 0.009780 seconds
+  Import took 0.013976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.482527 seconds.
+  path: Assets/Pre/PrefabG/StarPrefab.prefab
+  artifactKey: Guid(bfd7fb6276b48044d8a825284f3184e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pre/PrefabG/StarPrefab.prefab using Guid(bfd7fb6276b48044d8a825284f3184e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '367e5e3c47e778d5ffe5bf92a653cca2') in 0.009606 seconds
+  Import took 0.014056 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012643 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.01 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.23 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.089 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.93 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.6 MB.
+System memory in use after: 104.7 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2946.
+Total: 2.788600 ms (FindLiveObjects: 0.330000 ms CreateObjectMapping: 0.066100 ms MarkObjects: 2.299000 ms  DeleteObjects: 0.091700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012441 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.31 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.48 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.167 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.93 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.15 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.6 MB.
+System memory in use after: 104.8 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2950.
+Total: 2.752700 ms (FindLiveObjects: 0.382000 ms CreateObjectMapping: 0.081100 ms MarkObjects: 2.199800 ms  DeleteObjects: 0.088300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 207.874317 seconds.
+  path: Assets/Resources/Meshes/StarPrefab.prefab
+  artifactKey: Guid(122244a473aa4a143b9ea937aedb2a93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Meshes/StarPrefab.prefab using Guid(122244a473aa4a143b9ea937aedb2a93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09bda8a4ed46965e7cb568838770075c') in 0.032649 seconds
+  Import took 0.037010 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012722 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.93 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.18 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.101 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.95 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.16 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.6 MB.
+System memory in use after: 104.8 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2954.
+Total: 2.764300 ms (FindLiveObjects: 0.352800 ms CreateObjectMapping: 0.069600 ms MarkObjects: 2.251400 ms  DeleteObjects: 0.089100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 68.890436 seconds.
+  path: Assets/Pre/PrefabG/StarPrefab.prefab
+  artifactKey: Guid(bfd7fb6276b48044d8a825284f3184e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pre/PrefabG/StarPrefab.prefab using Guid(bfd7fb6276b48044d8a825284f3184e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3cbf8e7d2c6ab7f9e6dda8dc6570123') in 0.133356 seconds
+  Import took 0.137657 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.477595 seconds.
+  path: Assets/Pre/StarDatabaseLoader.asset
+  artifactKey: Guid(0eee2a155fdfe5f4f913a6e7a27a9ee4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pre/StarDatabaseLoader.asset using Guid(0eee2a155fdfe5f4f913a6e7a27a9ee4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18d40e047a449caa2b95b7b1c1fde9a5') in 0.019333 seconds
+  Import took 0.025511 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012593 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.91 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.19 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.155 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.24 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.18 ms.
+Unloading 2408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.7 MB.
+System memory in use after: 104.9 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2959.
+Total: 2.617900 ms (FindLiveObjects: 0.322300 ms CreateObjectMapping: 0.069200 ms MarkObjects: 2.141900 ms  DeleteObjects: 0.083000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 40.969852 seconds.
+  path: Assets/Pre/PrefabG/StarPrefab.prefab
+  artifactKey: Guid(bfd7fb6276b48044d8a825284f3184e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pre/PrefabG/StarPrefab.prefab using Guid(bfd7fb6276b48044d8a825284f3184e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ece288afe9781aee628a225b768a985b') in 0.097508 seconds
+  Import took 0.101785 seconds .
+
