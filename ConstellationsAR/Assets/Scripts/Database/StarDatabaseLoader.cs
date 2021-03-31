@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Linq;
 
+[CreateAssetMenu(menuName = "ConstellationsAR/database/star database")]
 public class StarDatabaseLoader : DatabaseLoader
 {
     public string path;
@@ -8,11 +9,6 @@ public class StarDatabaseLoader : DatabaseLoader
     public StarData[] stars;
 
     public int leng;
-
-    private void Awake()
-    {
-        OnDatabaseLoad();
-    }
 
     public override void OnDatabaseLoad()
     {
