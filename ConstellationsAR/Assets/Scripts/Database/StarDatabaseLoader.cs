@@ -19,4 +19,13 @@ public class StarDatabaseLoader : DatabaseLoader
 
         leng = stars.Length;
     }
+
+    public StarData GetStarByHipId(int hipId) 
+    {
+        var starData = stars.FirstOrDefault(s => s.hipId == hipId);
+        if (starData == null)
+            Debug.LogWarning("No hip id" + hipId);
+
+        return starData;
+    }
 }
