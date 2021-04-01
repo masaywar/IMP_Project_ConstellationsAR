@@ -7,6 +7,7 @@ using System.Linq;
 public class StarData
 {
     public int hygId;
+    public int hipId;
     public string properName;
     public Vector3 position;
 
@@ -15,6 +16,7 @@ public class StarData
         string[] lines = line.Split(',');
 
         hygId = ParseUtiltiy.SafeIntParse(lines[0]);
+        hipId = ParseUtiltiy.SafeIntParse(lines[1]);
         properName = lines[6];
         position = new Vector3(
             ParseUtiltiy.SafeFloatParse(lines[17]),
