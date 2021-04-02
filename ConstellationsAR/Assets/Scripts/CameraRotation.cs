@@ -12,7 +12,6 @@ public class ManageCamera : MonoBehaviour
         camParent.transform.position = this.transform.position;
         this.transform.parent = camParent.transform;
         Input.gyro.enabled = true;
-
     }
 
 
@@ -20,6 +19,5 @@ public class ManageCamera : MonoBehaviour
     {
         camParent.transform.Rotate(0, -Input.gyro.rotationRateUnbiased.y, 0);
         this.transform.Rotate(-Input.gyro.rotationRateUnbiased.x, 0, 0);
-
     }
 }
