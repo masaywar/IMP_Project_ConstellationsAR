@@ -10,6 +10,7 @@ public class ConstellationData
     public string id;
     public string name;
     public StarData[] stars;
+    public Vector3 position;
 
     public ConstellationData(string whiteSpaceText, StarDatabaseLoader starDatabaseLoader)
     {
@@ -21,6 +22,11 @@ public class ConstellationData
             .Select(idstr => int.Parse(idstr))
             .Select(idInt => starDatabaseLoader.GetStarByHipId(idInt))
             .ToArray();
+
+        position = stars
+            .Select(s => s.position)
+            .Aggregate((p, total) => total + p)
+            / stars.Length;
     }
 
     public override string ToString()

@@ -4,27 +4,38 @@
 
 #include "UnityCG.cginc"
 
+float J2000Offset;
+float scaleOffset;
+
+float4 GetJ2000Offset(float4 pos, float4 velocity) {
+    return pos + velocity * J2000Offset;
+}
+
+float4 GetScaleOffset(float4 pos) {
+    return pos * scaleOffset;
+}
+
 
 float4 Object2OffsetClipPos(float4 pos, float3 offset) {
     float4 v = float4(pos + offset, 1);
     return UnityObjectToClipPos(v);
 }
 
-float GetPixelScale(float4 vertex)
-{
-    float proJD = UNITY_MATRIX_P[1][1];
+
+float GetPixelScale(float4 vertex) {
+    float projD = UNITY_MATRIX_P[1][1];
     float dist = UnityObjectToViewPos(vertex).z;
-    float frustrumHeight = 2 * -dist * (1 / proJD);
+    float frustrumHeight = 2 * -dist * (1 / projD);
     float metersPerPixel = frustrumHeight / _ScreenParams.y;
     return metersPerPixel;
 }
 
-float GetScreenScale(float4 vertex, float fraction) 
-{
+float GetScreenScale(float4 vertex, float fraction) {
     float pixelScale = GetPixelScale(vertex);
     float avgWidth = (_ScreenParams.x + _ScreenParams.y) / 2.0;
     return pixelScale * fraction * avgWidth;
 }
+
 
 
 void WorldPoint2ClipBillboard(float4 pos, float scale, out float4 verts[4]) {

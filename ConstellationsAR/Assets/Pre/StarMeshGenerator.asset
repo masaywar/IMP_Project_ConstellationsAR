@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6ecbd24c9a4c449bd67a74ceb1b52f, type: 3}
   m_Name: StarMeshGenerator
   m_EditorClassIdentifier: 
-  folderPath: Assets/Resources/Meshes/StarMesh
+  folderPath: Assets/Resources/Meshes/StarMeshes
   m_cachedStarDBLoader: {fileID: 11400000, guid: 0eee2a155fdfe5f4f913a6e7a27a9ee4,
     type: 2}
   starsPerMesh: 10000

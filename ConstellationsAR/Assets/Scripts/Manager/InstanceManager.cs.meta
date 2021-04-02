@@ -4,13 +4,22 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - starsInstance: {fileID: 6106931419824910517, guid: bfd7fb6276b48044d8a825284f3184e9,
-      type: 3}
+  - starsInstance: {instanceID: 0}
+  - constellationsInstance: {instanceID: 0}
+  - constellationOverlayInstance: {instanceID: 0}
   - starDatabaseLoader: {fileID: 11400000, guid: 0eee2a155fdfe5f4f913a6e7a27a9ee4,
+      type: 2}
+  - constellationDatabaseLoader: {fileID: 11400000, guid: e1240da1a99d89e4d97ec0dbecabe71b,
       type: 2}
   - starMeshGenerator: {fileID: 11400000, guid: bbe542a7848579444a0629abacec112a,
       type: 2}
+  - constellationMeshGenerator: {fileID: 11400000, guid: d7286b76f1933ae49ab4ccc84a75fae7,
+      type: 2}
   - starPrefabGenerator: {fileID: 11400000, guid: 794f6fd784b09554595b4d34938f2850,
+      type: 2}
+  - constellationPrefabGenerator: {fileID: 11400000, guid: 638f54b48484b0e409f4b1eca4dde49f,
+      type: 2}
+  - constellationOverlayPrefabGenerator: {fileID: 11400000, guid: 113bbc0008c471b4fad8d547fd9f33de,
       type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
