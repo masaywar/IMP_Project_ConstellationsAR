@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+#if UNITY_EDITOR
 using UnityEngine;
+#endif
 [CreateAssetMenu(menuName = "ConstellationsAR/AssetGenerator/starPrefab")]
 public class MeshPrefabGenerator : AssetGenerator
 {
@@ -10,11 +12,13 @@ public class MeshPrefabGenerator : AssetGenerator
 
     protected override void GenerateAsset()
     {
+#if UNITY_EDITOR
         var parentPrefab = new GameObject(prefabName);
         AssetUtility.GetAssetAtPath<Mesh>(meshGenerator.folderPath).
             ForEach(m => CreateMeshGameObjet(m, parentPrefab));
 
         AssetUtility.SavePrefabAsset(folderPath, parentPrefab);
+#endif
     }
 
     GameObject CreateMeshGameObjet(Mesh mesh, GameObject parent)

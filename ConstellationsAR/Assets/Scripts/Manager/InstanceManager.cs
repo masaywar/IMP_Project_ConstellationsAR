@@ -1,4 +1,7 @@
+
+#if UNITY_EDITOR
 using UnityEngine;
+#endif
 
 [CreateAssetMenu(menuName = "ConstellationsAR/AssetGenerator/InstanceManager")]
 public class InstanceManager : MonoBehaviour
@@ -15,6 +18,8 @@ public class InstanceManager : MonoBehaviour
     GameObject constellationOverlayInstance;
 
 
+
+
     public StarDatabaseLoader starDatabaseLoader;
     public ConstellationDatabaseLoader constellationDatabaseLoader;
 
@@ -24,6 +29,7 @@ public class InstanceManager : MonoBehaviour
 
     public MeshPrefabGenerator starPrefabGenerator;
     public MeshPrefabGenerator constellationPrefabGenerator;
+    public ConstellationOverlayPrefabGenerator constellationOverlayPrefabGenerator;
 
 
     public void GenerateAndInstantiatePrefab()
@@ -35,6 +41,7 @@ public class InstanceManager : MonoBehaviour
 
         starPrefabGenerator.Generate();
         constellationPrefabGenerator.Generate();
+        constellationOverlayPrefabGenerator.Generate();
 
         InstantiatePrefab();
     }
@@ -42,6 +49,7 @@ public class InstanceManager : MonoBehaviour
 
     public void InstantiatePrefab()
     {
+#if UNITY_EDITOR
         if (starsInstance != null)
             GameObject.DestroyImmediate(starsInstance);
         if (constellationsInstance != null)
@@ -54,6 +62,10 @@ public class InstanceManager : MonoBehaviour
 
         var constellationPrefab = AssetUtility.GetAssetAtPath<GameObject>(constellationPrefabGenerator.folderPath)[0];
         constellationsInstance = GameObject.Instantiate(constellationPrefab, Vector3.zero, Quaternion.identity, transform);
+
+        var constellationOverlayPrefab = AssetUtility.GetAssetAtPath<GameObject>(constellationOverlayPrefabGenerator.folderPath)[0];
+        constellationOverlayInstance = GameObject.Instantiate(constellationOverlayPrefab, Vector3.zero, Quaternion.identity, transform);
+#endif
 
     }
 

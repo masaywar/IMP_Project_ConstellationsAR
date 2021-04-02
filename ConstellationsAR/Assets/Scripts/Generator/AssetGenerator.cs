@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+#if UNITY_EDITOR
 using UnityEngine;
+#endif
 
 public abstract class AssetGenerator:ScriptableObject
 {
@@ -9,7 +11,9 @@ public abstract class AssetGenerator:ScriptableObject
 
     public void Generate()
     {
+#if UNITY_EDITOR
         AssetUtility.ClearAssetFolder(folderPath);
+#endif
         GenerateAsset();
     }
 }
