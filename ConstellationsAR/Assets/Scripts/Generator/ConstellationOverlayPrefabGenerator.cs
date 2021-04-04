@@ -1,6 +1,4 @@
-#if UNITY_EDITOR
 using UnityEngine;
-#endif
 
 
 [CreateAssetMenu(menuName = "StarChart/Asset Generators/Constellation Overlay")]

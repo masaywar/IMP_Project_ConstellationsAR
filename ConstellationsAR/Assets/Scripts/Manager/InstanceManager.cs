@@ -1,7 +1,5 @@
 
-#if UNITY_EDITOR
 using UnityEngine;
-#endif
 
 [CreateAssetMenu(menuName = "ConstellationsAR/AssetGenerator/InstanceManager")]
 public class InstanceManager : MonoBehaviour

@@ -80,8 +80,6 @@ public class ButtonEvent : MonoBehaviour
         {
             CloseMotion();
         }
-        
-
     }
     void OpenMotion()
     {
