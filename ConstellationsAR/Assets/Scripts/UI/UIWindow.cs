@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UIWindow : MonoBehaviour
+public class UIWindow : Object
 {
     private UIManager cachedUIManager;
 
@@ -12,9 +12,9 @@ public class UIWindow : MonoBehaviour
         //You can access any UIWindow with UIManager Dictionary.
 
         cachedUIManager = UIManager.Instance;
-        if (!cachedUIManager.uiWindowDict.ContainsKey(this.gameObject))
+        if (!cachedUIManager.uiWindowDict.ContainsKey(this.name))
         {
-            cachedUIManager.uiWindowDict.Add(this.gameObject, this);
+            cachedUIManager.uiWindowDict.Add(this.name, this);
         }
     }
 

@@ -4,21 +4,30 @@ using UnityEngine;
 
 public class UIManager : Singleton<UIManager>
 {
-    private Dictionary<GameObject, UIWindow> _uiWindowDict;
-    public Dictionary<GameObject, UIWindow> uiWindowDict 
+    private Dictionary<string, UIWindow> _uiWindowDict;
+    public Dictionary<string, UIWindow> uiWindowDict 
     {
         get 
         {
             if (_uiWindowDict == null)
-                _uiWindowDict = new Dictionary<GameObject, UIWindow>();
+                _uiWindowDict = new Dictionary<string, UIWindow>();
 
             return _uiWindowDict;
         }
         
     }
     
-    private void Awake()
+    private void Awake() 
     {
         this.gameObject.SetActive(false);
+    }
+
+    public T FindByWindowName<T>(string name) where T : UIWindow
+    {
+        UIWindow window = null;
+        if (uiWindowDict.ContainsKey(name))
+            window = uiWindowDict[name];
+
+        return (T)window;
     }
 }
