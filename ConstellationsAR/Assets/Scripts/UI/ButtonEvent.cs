@@ -13,9 +13,13 @@ public class ButtonEvent : MonoBehaviour
     private GameObject InformationCanvas;  // possible to modify
     private GameObject ScreenshotCanvas;
 
-    // Button
+    //Panel
+    private GameObject homepanel;
+    private GameObject infopanel;
+    private GameObject screenshotpanel;
 
-    // Home
+    // Button
+    // In Home
     private Button getinfo;
     private Button getscreen;
 
@@ -26,17 +30,23 @@ public class ButtonEvent : MonoBehaviour
     private Button takescreenshot;
     private Button closescreen;
 
+    // Motion Animation Boolean (Test)
+    private bool transition;
+
     // Start is called before the first frame update
     void Start()
-    {
+    { 
         // Get Canvas
-
         HomeCanvas = transform.Find("Home Canvas").gameObject;
         InformationCanvas = transform.Find("Information Canvas").gameObject;  // possible to modify
-        ScreenshotCanvas = transform.Find("Camera Canvas").gameObject;
+        ScreenshotCanvas = transform.Find("Screenshot Canvas").gameObject;
         
-        // Get Button
+        // Get Panel
+        homepanel = HomeCanvas.transform.Find("Home Panel").gameObject;
+        infopanel = InformationCanvas.transform.Find("Information Panel").gameObject;
+        screenshotpanel = ScreenshotCanvas.transform.Find("Screenshot Panel").gameObject;
 
+        // Get Button
         // Button to tranfer information canvas (possible modify)
         getinfo = HomeCanvas.transform.GetChild(0).transform.Find("DetailButton").GetComponent<Button>(); 
         getscreen = HomeCanvas.transform.GetChild(0).transform.Find("CameraButton").GetComponent<Button>();
@@ -61,18 +71,65 @@ public class ButtonEvent : MonoBehaviour
         closescreen.onClick.AddListener(CloseScreenshot);
         takescreenshot.onClick.AddListener(TakePhoto);
 
+        // Information Panel Motion
+        if (transition == true)
+        {
+            OpenMotion();
+        }
+        if (transition == false)
+        {
+            CloseMotion();
+        }
+        
+
+    }
+    void OpenMotion()
+    {
+        GameObject infopanel = InformationCanvas.transform.GetChild(0).gameObject;
+    
+        if (infopanel.GetComponent<RectTransform>().localScale.x < 0.8f)
+        {
+            infopanel.GetComponent<RectTransform>().localScale += new Vector3(1,1,1) * 2.0f * Time.deltaTime;
+        }
+        else if (infopanel.GetComponent<RectTransform>().localScale.x >= 0.8f && infopanel.GetComponent<RectTransform>().localScale.x < 1)
+        {
+            infopanel.GetComponent<RectTransform>().localScale += new Vector3(1,1,1) * 1.0f * Time.deltaTime;
+        }
+        else
+        {
+            infopanel.GetComponent<RectTransform>().localScale = new Vector3 (1,1,1);
+        }
+    }
+    void CloseMotion()
+    {
+        GameObject infopanel = InformationCanvas.transform.GetChild(0).gameObject;
+        
+        if (infopanel.GetComponent<RectTransform>().localScale.x > 0.2f)
+        {
+            infopanel.GetComponent<RectTransform>().localScale -= new Vector3(1,1,1) * 2.0f * Time.deltaTime;
+        }
+        else if (infopanel.GetComponent<RectTransform>().localScale.x <= 0.2f && infopanel.GetComponent<RectTransform>().localScale.x > 0)
+        {
+            infopanel.GetComponent<RectTransform>().localScale -= new Vector3(1,1,1) * 1.0f * Time.deltaTime;
+        }
+        else
+        {
+            infopanel.GetComponent<RectTransform>().localScale = new Vector3 (0,0,0);
+            InformationCanvas.SetActive(false);
+            HomeCanvas.SetActive(true);
+        }
     }
 
     void OpenInformation()
     {
         HomeCanvas.SetActive(false);
         InformationCanvas.SetActive(true);
+        transition = true;
     }
 
     void CloseInformation()
-    {
-        InformationCanvas.SetActive(false);
-        HomeCanvas.SetActive(true);
+    {   
+        transition = false;
     }
 
     void OpenScreenshot()
