@@ -16,11 +16,11 @@ Shader "StarChart/Star"
           Pass
           {
             CGPROGRAM
+            #pragma target 3.0
             #pragma require geometry
             #pragma vertex vert
             #pragma geometry geom
             #pragma fragment frag
-            #pragma target 3.0
             #include "UnityCG.cginc"
             #include "Utility.cginc"
 
@@ -71,7 +71,6 @@ Shader "StarChart/Star"
 
                 float4 verts[4];
                 WorldPoint2ClipBillboard(IN[0].pos, scale, verts);
-
 
                 g2f OUT;
                 OUT.color = IN[0].color;

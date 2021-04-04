@@ -1,3 +1,5 @@
+
+#if UNITY_EDITOR
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -38,4 +40,5 @@ public static class AssetUtility
         GameObject.DestroyImmediate(go);
     }
 }
- 
+
+#endif

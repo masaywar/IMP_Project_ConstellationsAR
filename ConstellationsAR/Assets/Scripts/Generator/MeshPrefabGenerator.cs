@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-#if UNITY_EDITOR
 using UnityEngine;
-#endif
 [CreateAssetMenu(menuName = "ConstellationsAR/AssetGenerator/starPrefab")]
 public class MeshPrefabGenerator : AssetGenerator
 {
