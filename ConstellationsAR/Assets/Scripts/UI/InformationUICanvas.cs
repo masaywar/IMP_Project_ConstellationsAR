@@ -27,18 +27,21 @@ public class InformationUICanvas : UIWindow
 
     void Awake()
     {
-        bttn4CloseInfo.onClick.AddListener(CloseInformationCanvas);
+        bttn4CloseInfo.onClick.AddListener(CloseInformationMotion);
     }
 
    
     public void OnEnable()
     {
         //Action when this object activieSelf == true
-        //InformationPanel open...      
-        if (InformationPanel.transform.localScale.x < 1)
-        {
-            InformationPanel.transform.DOScale(Vector3.one , 1).SetEase(Ease.OutQuad);
-        } 
+        //InformationPanel open...  
+
+        // Scale Up Motion
+        // InformationPanel.transform.DOScale(Vector3.one * 0.8f, 0.5f).SetEase(Ease.OutQuad);
+        
+        InformationPanel.transform.localPosition = new Vector3(0,-1000,0);
+        InformationPanel.transform.DOLocalMoveY(0 , 0.4f).SetEase(Ease.OutQuad);
+
         //if GetConsellatinfo is success, 
         //  Show data
         //else
@@ -62,7 +65,13 @@ public class InformationUICanvas : UIWindow
         return true;
     }
 
-    private void CloseInformationCanvas()
+    public void CloseInformationMotion()
+    {   
+        // Scale Up Motion
+        // InformationPanel.transform.DOScale(Vector3.zero, 0.5f).SetEase(Ease.OutQuad).OnComplete(CloseInformationCanvas);
+        InformationPanel.transform.DOLocalMoveY(-1000 , 0.4f).SetEase(Ease.OutQuad).OnComplete(CloseInformationCanvas);
+    }
+    public void CloseInformationCanvas()
     {
         this.gameObject.SetActive(false);
         HomeCanvas.SetActive(true);
