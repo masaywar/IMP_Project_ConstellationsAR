@@ -5,7 +5,6 @@ using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
-
 /// <summary>
 ///      
 /// This class is example of informationCanvas script.
@@ -13,24 +12,29 @@ using UnityEngine.XR.ARSubsystems;
 /// If you have anyquestion, please cantact to "Lee" 
 /// </summary>
 
+
 public class InformationUICanvas : UIWindow
 {
+    // Please declare variables as public which are
+    // components of this canvas. 
+
+    public GameObject HomeCanvas;
 
     public RectTransform InformationCanvas;
     public RectTransform InformationPanel;
 
-    public Button bttn4OpeingInfo;
+    public Button bttn4CloseInfo;
 
-    // Please declare variables as public which are
-    // components of this canvas. 
-
-
+    void Awake()
+    {
+        bttn4CloseInfo.onClick.AddListener(CloseInformationCanvas);
+    }
+   
     public void OnEnable()
     {
         //Action when this object activieSelf == true
-
-
-        //InformationPanel open...
+        //InformationPanel open...  
+        StartCoroutine(OpenInformationCanvas());      
         //if GetConsellatinfo is success, 
         //  Show data
         //else
@@ -40,7 +44,6 @@ public class InformationUICanvas : UIWindow
     public void OnDisable()
     {
         //Action when this object activieSelf == false
-
         //informationPanel close...
 
         //example of how to find canvas ui in uimanager class. 
@@ -54,5 +57,30 @@ public class InformationUICanvas : UIWindow
         //  return false;
 
         return true;
+    }
+
+    private void CloseInformationCanvas()
+    {
+        this.gameObject.SetActive(false);
+        HomeCanvas.SetActive(true);
+    }
+    
+    IEnumerator OpenInformationCanvas()
+    {
+        if(InformationPanel.localScale.x < 0.8f)
+        {
+            yield return new WaitForSeconds(1000);
+            InformationPanel.localScale += new Vector3(1,1,1) * 0.05f;
+            
+        }
+        else if(InformationPanel.localScale.x >= 0.8f && InformationPanel.localScale.x < 1)
+        {
+            yield return new WaitForSeconds(1000);
+            InformationPanel.localScale += new Vector3(1,1,1) * 0.07f;
+        }
+        else 
+        {
+            InformationPanel.localScale = new Vector3(1,1,1);
+        }
     }
 }
