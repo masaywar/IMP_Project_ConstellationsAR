@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
+using DG.Tweening;
 
 /// <summary>
 ///      
@@ -19,7 +20,6 @@ public class InformationUICanvas : UIWindow
     // components of this canvas. 
 
     public GameObject HomeCanvas;
-
     public RectTransform InformationCanvas;
     public RectTransform InformationPanel;
 
@@ -29,12 +29,16 @@ public class InformationUICanvas : UIWindow
     {
         bttn4CloseInfo.onClick.AddListener(CloseInformationCanvas);
     }
+
    
     public void OnEnable()
     {
         //Action when this object activieSelf == true
-        //InformationPanel open...  
-        StartCoroutine(OpenInformationCanvas());      
+        //InformationPanel open...      
+        if (InformationPanel.transform.localScale.x < 1)
+        {
+            InformationPanel.transform.DOScale(Vector3.one , 1).SetEase(Ease.OutQuad);
+        } 
         //if GetConsellatinfo is success, 
         //  Show data
         //else
@@ -45,7 +49,6 @@ public class InformationUICanvas : UIWindow
     {
         //Action when this object activieSelf == false
         //informationPanel close...
-
         //example of how to find canvas ui in uimanager class. 
 
         //UIManager.Instance.FindByWindowName<"Your scripted canvas">(this.name);
@@ -65,22 +68,4 @@ public class InformationUICanvas : UIWindow
         HomeCanvas.SetActive(true);
     }
     
-    IEnumerator OpenInformationCanvas()
-    {
-        if(InformationPanel.localScale.x < 0.8f)
-        {
-            yield return new WaitForSeconds(1000);
-            InformationPanel.localScale += new Vector3(1,1,1) * 0.05f;
-            
-        }
-        else if(InformationPanel.localScale.x >= 0.8f && InformationPanel.localScale.x < 1)
-        {
-            yield return new WaitForSeconds(1000);
-            InformationPanel.localScale += new Vector3(1,1,1) * 0.07f;
-        }
-        else 
-        {
-            InformationPanel.localScale = new Vector3(1,1,1);
-        }
-    }
 }
