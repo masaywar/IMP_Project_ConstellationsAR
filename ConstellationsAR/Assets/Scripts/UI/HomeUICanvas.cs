@@ -21,7 +21,6 @@ public class HomeUICanvas : UIWindow
 
     private void OpenInformationCanvas()
     {
-        this.gameObject.SetActive(false);
         InformationCanvas.SetActive(true);
     }
     private void OpenScreenShotCanvas()

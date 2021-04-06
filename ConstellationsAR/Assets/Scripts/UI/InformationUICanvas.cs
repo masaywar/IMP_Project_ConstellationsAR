@@ -24,6 +24,8 @@ public class InformationUICanvas : UIWindow
     public RectTransform InformationPanel;
 
     public Button bttn4CloseInfo;
+    public CanvasGroup AlphaBackground;
+   
 
     void Awake()
     {
@@ -41,6 +43,7 @@ public class InformationUICanvas : UIWindow
         
         InformationPanel.transform.localPosition = new Vector3(0,-1000,0);
         InformationPanel.transform.DOLocalMoveY(0 , 0.4f).SetEase(Ease.OutQuad);
+        AlphaBackground.DOFade(1, 0.4f).SetEase(Ease.OutQuad);
 
         //if GetConsellatinfo is success, 
         //  Show data
@@ -69,12 +72,12 @@ public class InformationUICanvas : UIWindow
     {   
         // Scale Up Motion
         // InformationPanel.transform.DOScale(Vector3.zero, 0.5f).SetEase(Ease.OutQuad).OnComplete(CloseInformationCanvas);
+        AlphaBackground.DOFade(0, 0.4f).SetEase(Ease.OutQuad);
         InformationPanel.transform.DOLocalMoveY(-1000 , 0.4f).SetEase(Ease.OutQuad).OnComplete(CloseInformationCanvas);
     }
     public void CloseInformationCanvas()
     {
         this.gameObject.SetActive(false);
-        HomeCanvas.SetActive(true);
     }
     
 }
