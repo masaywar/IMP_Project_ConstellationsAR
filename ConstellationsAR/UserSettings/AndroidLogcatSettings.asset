@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "LMV409Nd62ee564",
+    "m_SelectedDeviceId": "99011FFBA000PK",
     "m_SelectedPackage": {
-        "deviceId": "LMV409Nd62ee564",
+        "deviceId": "99011FFBA000PK",
         "name": "com.DefaultCompany.ConstellationsAR",
-        "processId": 23371,
+        "processId": 17982,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -24,6 +24,12 @@
             "deviceId": "LMV409Nd62ee564",
             "name": "com.DefaultCompany.ConstellationsAR",
             "processId": 23371,
+            "exited": false
+        },
+        {
+            "deviceId": "99011FFBA000PK",
+            "name": "com.DefaultCompany.ConstellationsAR",
+            "processId": 17982,
             "exited": false
         }
     ],
