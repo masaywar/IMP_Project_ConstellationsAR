@@ -15,6 +15,9 @@ public class ConstellationData
     public ConstellationData(string whiteSpaceText, StarDatabaseLoader starDatabaseLoader)
     {
         var lines = Regex.Split(whiteSpaceText.Trim(), @"\s+").ToArray();
+
+        id = lines[0];
+
         stars = lines.
             Skip(2)
             .Select(idstr => int.Parse(idstr))

@@ -39,7 +39,6 @@ public class ConstellationDatabaseLoader : DatabaseLoader
 
     void AssignConstellationNames(Dictionary<string, string> names)
     {
-
         constellations.ForEach(c =>
         {
             string name;

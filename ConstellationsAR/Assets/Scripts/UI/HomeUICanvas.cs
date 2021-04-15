@@ -22,13 +22,13 @@ public class HomeUICanvas : UIWindow
             bttn4OpenInfo.Add(this.transform.GetChild(i).GetComponent<Button>());
         }
         
-        for (int i=0; i< bttn4OpenInfo.Count; i++)
-        {
-            if(bttn4OpenInfo[i].name == "ToScreenshotButton")
-            {
-                bttn4OpenInfo.RemoveAt(i);
-            }
-        }
+        //for (int i=0; i< bttn4OpenInfo.Count; i++)
+        //{
+        //    if(bttn4OpenInfo[i].name == "ToScreenshotButton")
+        //    {
+        //        bttn4OpenInfo.RemoveAt(i);
+        //    }
+        //}
 
         foreach (Button button in bttn4OpenInfo)
         {

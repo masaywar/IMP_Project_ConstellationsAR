@@ -15,4 +15,4 @@ MonoBehaviour:
   folderPath: Assets/PreSet/PrefabG
   meshGenerator: {fileID: 11400000, guid: bbe542a7848579444a0629abacec112a, type: 2}
   prefabName: StarPrefab
-  material: {fileID: 2100000, guid: 316278b499ea26042a43aadf432da761, type: 2}
+  material: {fileID: 2100000, guid: 0a4f73ca407dfc5438771b316fb9b615, type: 2}

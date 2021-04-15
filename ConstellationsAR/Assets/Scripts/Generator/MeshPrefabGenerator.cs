@@ -23,8 +23,15 @@ public class MeshPrefabGenerator : AssetGenerator
     {
         GameObject go = new GameObject(mesh.name);
         go.transform.parent = parent.transform;
+
         go.AddComponent<MeshFilter>().mesh = mesh;
-        go.AddComponent<MeshRenderer>().material = material;
+        Material m = go.AddComponent<MeshRenderer>().material = material;
+
+        Debug.Log(this.name);
+        if (this.name == "ConstellationPrefabGenerator")
+        {
+            ConstellationObject addedGo = go.AddComponent<ConstellationObject>();
+        }
 
         return go;
     }
