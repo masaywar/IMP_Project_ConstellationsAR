@@ -11,6 +11,8 @@ Obj/
 UnityGenerated/
  
 Library/
+
+Log/
  
  # Unity3D generated meta files 
 *.pidb.meta
