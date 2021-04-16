@@ -6,6 +6,7 @@ using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 using TMPro;
 
+
 public class HomeUICanvas : UIWindow
 {   
     public GameObject InformationCanvas;
@@ -14,6 +15,16 @@ public class HomeUICanvas : UIWindow
     public Button bttn4OpenScreenshot;
     public List<Button> bttn4OpenInfo = new List<Button>();
     public TextMeshProUGUI ConstellationName;
+    public TextMeshProUGUI SessionDetail;
+    public TextMeshProUGUI StoryDetail;
+    public Image ConstellationObject;
+    
+    private ConstellationJsonDataArray.Data[] JsonData;
+
+    void Start()
+    {
+        JsonData = GamaManager.Instance.datas;
+    }
 
     void Awake() 
     {           
@@ -35,13 +46,22 @@ public class HomeUICanvas : UIWindow
             button.onClick.AddListener(() => OpenInformationCanvas(button.name));
         }
         
-        bttn4OpenScreenshot.onClick.AddListener(OpenScreenShotCanvas);
+        // bttn4OpenScreenshot.onClick.AddListener(OpenScreenShotCanvas);
     }
 
     private void OpenInformationCanvas(string buttonname)
     {
         InformationCanvas.SetActive(true);
         ConstellationName.text = buttonname;
+
+        foreach (ConstellationJsonDataArray.Data data in JsonData)
+        {
+            if (data.name== buttonname)
+            {
+                SessionDetail.text = data.period;
+                StoryDetail.text = data.story;
+            }
+        }
 
     }
     private void OpenScreenShotCanvas()
