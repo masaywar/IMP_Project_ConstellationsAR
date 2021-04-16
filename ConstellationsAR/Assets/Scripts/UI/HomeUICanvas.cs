@@ -17,9 +17,11 @@ public class HomeUICanvas : UIWindow
     public TextMeshProUGUI ConstellationName;
     public TextMeshProUGUI SessionDetail;
     public TextMeshProUGUI StoryDetail;
-    public Image ConstellationObject;
+    public Image ConstellationImage;
+
     
     private ConstellationJsonDataArray.Data[] JsonData;
+    private string url;
 
     void Start()
     {
@@ -60,6 +62,9 @@ public class HomeUICanvas : UIWindow
             {
                 SessionDetail.text = data.period;
                 StoryDetail.text = data.story;
+
+                url = data.image;
+                StartCoroutine(SetSprite());
             }
         }
 
@@ -68,5 +73,17 @@ public class HomeUICanvas : UIWindow
     {
         this.gameObject.SetActive(false);
         ScreenShotCanvas.SetActive(true);
+    }
+
+    IEnumerator SetSprite()
+    {
+         using (WWW www = new WWW(url))
+         {  
+             yield return www;
+
+             Texture2D tex = new Texture2D(5, 5, TextureFormat.DXT1, false);
+             www.LoadImageIntoTexture(tex);
+             ConstellationImage.sprite = Sprite.Create(tex, new Rect(0,0, tex.width, tex.height), Vector2.one * 0.5f);
+         }
     }
 }
