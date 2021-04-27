@@ -35,20 +35,20 @@ public class HomeUICanvas : UIWindow
             bttn4OpenInfo.Add(this.transform.GetChild(i).GetComponent<Button>());
         }
         
-        //for (int i=0; i< bttn4OpenInfo.Count; i++)
-        //{
-        //    if(bttn4OpenInfo[i].name == "ToScreenshotButton")
-        //    {
-        //        bttn4OpenInfo.RemoveAt(i);
-        //    }
-        //}
+        for (int i=0; i< bttn4OpenInfo.Count; i++)
+        {
+            if(bttn4OpenInfo[i].name == "ToScreenshotButton")
+            {
+                bttn4OpenInfo.RemoveAt(i);
+            }
+        }
 
         foreach (Button button in bttn4OpenInfo)
         {
             button.onClick.AddListener(() => OpenInformationCanvas(button.name));
         }
         
-        // bttn4OpenScreenshot.onClick.AddListener(OpenScreenShotCanvas);
+        bttn4OpenScreenshot.onClick.AddListener(OpenScreenShotCanvas);
     }
 
     private void OpenInformationCanvas(string buttonname)

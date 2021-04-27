@@ -67,7 +67,7 @@ public class ConstellationObject : MonoBehaviour
             }
 
 
-            print(string.Format("{0}:{1}", name, distance));
+            // print(string.Format("{0}:{1}", name, distance));
         }
     }
 }
