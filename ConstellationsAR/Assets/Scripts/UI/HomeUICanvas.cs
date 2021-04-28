@@ -59,12 +59,11 @@ public class HomeUICanvas : UIWindow
         foreach (ConstellationJsonDataArray.Data data in JsonData)
         {
             if (data.name== buttonname)
-            {
+            {   
+                string path = "Pictures/" + data.name;
                 SessionDetail.text = data.period;
                 StoryDetail.text = data.story;
-
-                url = data.image;
-                StartCoroutine(SetSprite());
+                ConstellationImage.sprite = Resources.Load<Sprite>(path) as Sprite;
             }
         }
 
@@ -75,6 +74,7 @@ public class HomeUICanvas : UIWindow
         ScreenShotCanvas.SetActive(true);
     }
 
+    /*
     IEnumerator SetSprite()
     {
          using (WWW www = new WWW(url))
@@ -85,5 +85,5 @@ public class HomeUICanvas : UIWindow
              www.LoadImageIntoTexture(tex);
              ConstellationImage.sprite = Sprite.Create(tex, new Rect(0,0, tex.width, tex.height), Vector2.one * 0.5f);
          }
-    }
+    }*/
 }
