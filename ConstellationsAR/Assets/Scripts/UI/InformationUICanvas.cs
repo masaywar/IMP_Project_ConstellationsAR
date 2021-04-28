@@ -18,7 +18,7 @@ public class InformationUICanvas : UIWindow
 {
     // Please declare variables as public which are
     // components of this canvas. 
-
+    public WholeUICanvas parentUI;
     public GameObject HomeCanvas;
     public RectTransform InformationCanvas;
     public RectTransform InformationPanel;
@@ -32,7 +32,13 @@ public class InformationUICanvas : UIWindow
         bttn4CloseInfo.onClick.AddListener(CloseInformationMotion);
     }
 
-   
+    private void Start()
+    {
+        Canvas thisCanvas = GetComponent<Canvas>();
+        thisCanvas.worldCamera = Camera.main;
+        thisCanvas.planeDistance = 1;
+    }
+
     public void OnEnable()
     {
         //Action when this object activieSelf == true
@@ -78,6 +84,7 @@ public class InformationUICanvas : UIWindow
     public void CloseInformationCanvas()
     {
         this.gameObject.SetActive(false);
+        parentUI.OnHomeUIOpened();
     }
     
 }

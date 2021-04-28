@@ -1,8 +1,7 @@
 
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ConstellationsAR/AssetGenerator/InstanceManager")]
-public class InstanceManager : MonoBehaviour
+public class InstanceManager : Singleton<InstanceManager>
 {
 
     [HideInInspector]
@@ -15,13 +14,6 @@ public class InstanceManager : MonoBehaviour
     [SerializeField]
     GameObject constellationOverlayInstance;
 
-
-
-
-    public StarDatabaseLoader starDatabaseLoader;
-    public ConstellationDatabaseLoader constellationDatabaseLoader;
-
-
     public StarMeshGenerator starMeshGenerator;
     public ConstellationMeshGenerator constellationMeshGenerator;
 
@@ -29,16 +21,19 @@ public class InstanceManager : MonoBehaviour
     public MeshPrefabGenerator constellationPrefabGenerator;
     public ConstellationOverlayPrefabGenerator constellationOverlayPrefabGenerator;
 
-
     public void GenerateAndInstantiatePrefab()
     {
-        starDatabaseLoader.OnDatabaseLoad();
+#if UNITY_EDITOR
+        StarDatabaseLoader.Instance.OnDatabaseLoad();
+        ConstellationDatabaseLoader.Instance.OnDatabaseLoad();
+#endif
 
         starMeshGenerator.Generate();
         constellationMeshGenerator.Generate();
 
         starPrefabGenerator.Generate();
         constellationPrefabGenerator.Generate();
+
         constellationOverlayPrefabGenerator.Generate();
 
         InstantiatePrefab();
@@ -47,7 +42,6 @@ public class InstanceManager : MonoBehaviour
 
     public void InstantiatePrefab()
     {
-#if UNITY_EDITOR
         if (starsInstance != null)
             GameObject.DestroyImmediate(starsInstance);
         if (constellationsInstance != null)
@@ -55,16 +49,14 @@ public class InstanceManager : MonoBehaviour
         if (constellationOverlayInstance != null)
             GameObject.DestroyImmediate(constellationOverlayInstance);
 
-        var starPrefab = AssetUtility.GetAssetAtPath<GameObject>(starPrefabGenerator.folderPath)[0];
-        starsInstance = GameObject.Instantiate(starPrefab, Vector3.zero, Quaternion.identity, transform);
+        var starPrefab = Resources.LoadAll<GameObject>(starPrefabGenerator.folderPath.Replace($"Assets/Resources/", ""))[0];
+        starsInstance = Instantiate(starPrefab, Vector3.zero, Quaternion.identity);
 
-        var constellationPrefab = AssetUtility.GetAssetAtPath<GameObject>(constellationPrefabGenerator.folderPath)[0];
-        constellationsInstance = GameObject.Instantiate(constellationPrefab, Vector3.zero, Quaternion.identity, transform);
+        var constellationPrefab = Resources.LoadAll<GameObject>(constellationPrefabGenerator.folderPath.Replace($"Assets/Resources/", ""))[0];
+        constellationsInstance = GameObject.Instantiate(constellationPrefab, Vector3.zero, Quaternion.identity);
 
-        var constellationOverlayPrefab = AssetUtility.GetAssetAtPath<GameObject>(constellationOverlayPrefabGenerator.folderPath)[0];
-        constellationOverlayInstance = GameObject.Instantiate(constellationOverlayPrefab, Vector3.zero, Quaternion.identity, transform);
-#endif
-
+        var constellationOverlayPrefab = Resources.Load<GameObject>("Prefabs/UIPrefab");
+        Instantiate(constellationOverlayPrefab, Vector3.zero, Quaternion.identity);
     }
 
 

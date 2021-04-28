@@ -14,10 +14,10 @@ public class ConstellationJsonDataArray
 
     public void LoadConstellationData2Json()
     {
-        string fileName = "Constellations.json";
+        string fileName = "Constellations";
 
-        string json = ExtensionMethod.LoadJson(GamaManager.Instance.AssetPath, fileName);
-        data = ExtensionMethod.FromJson<Data>(json);
+        TextAsset textAsset = Resources.Load<TextAsset>(fileName);
+        data = ExtensionMethods.FromJson<Data>(textAsset.ToString());
     }
 
     [System.Serializable]

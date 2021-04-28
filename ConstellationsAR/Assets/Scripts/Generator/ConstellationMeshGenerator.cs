@@ -6,12 +6,14 @@ using System.Linq;
 [CreateAssetMenu(menuName = "ConstellationsAR/AssetGenerator/ConstellationMesh")]
 public class ConstellationMeshGenerator : AssetGenerator
 {
-    public ConstellationDatabaseLoader m_cachedConstellationDBLoader;
+    public ConstellationDatabaseLoader cachedConstllationDatabaseLoader;
     
     protected override void GenerateAsset()
     {
+        cachedConstllationDatabaseLoader = ConstellationDatabaseLoader.Instance;
+
 #if UNITY_EDITOR
-        m_cachedConstellationDBLoader.
+        cachedConstllationDatabaseLoader.
              constellations.Select(c => CreateMesh(c.stars, c.name)).
              ForEach(m => AssetUtility.SaveMeshAsset(folderPath, m));
 #endif

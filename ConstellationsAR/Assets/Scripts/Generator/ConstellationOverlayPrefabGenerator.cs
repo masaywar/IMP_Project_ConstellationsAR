@@ -9,14 +9,14 @@ public class ConstellationOverlayPrefabGenerator : AssetGenerator
     public GameObject overlayPrefab;
 
 
-    public ConstellationDatabaseLoader databaseLoader;
-
+    public ConstellationDatabaseLoader cachedDatabaseLoader;
 
     protected override void GenerateAsset()
     {
+        cachedDatabaseLoader = (ConstellationDatabaseLoader)ConstellationDatabaseLoader.Instance;
         var canvasInstance = GameObject.Instantiate(canvasPrefab);
 #if UNITY_EDITOR
-        databaseLoader
+        cachedDatabaseLoader
         .constellations
             .ForEach(c => CreateTextOverlayInstance(c, canvasInstance.transform));
         AssetUtility.SavePrefabAsset(folderPath, canvasInstance);

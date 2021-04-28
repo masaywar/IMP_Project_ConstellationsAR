@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "99011FFBA000PK",
         "name": "com.DefaultCompany.ConstellationsAR",
-        "processId": 20862,
+        "processId": 14009,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -192,6 +192,42 @@
             "deviceId": "99011FFBA000PK",
             "name": "com.DefaultCompany.ConstellationsAR",
             "processId": 20862,
+            "exited": false
+        },
+        {
+            "deviceId": "99011FFBA000PK",
+            "name": "com.DefaultCompany.ConstellationsAR",
+            "processId": 24407,
+            "exited": false
+        },
+        {
+            "deviceId": "99011FFBA000PK",
+            "name": "com.DefaultCompany.ConstellationsAR",
+            "processId": 26016,
+            "exited": false
+        },
+        {
+            "deviceId": "99011FFBA000PK",
+            "name": "com.DefaultCompany.ConstellationsAR",
+            "processId": 28873,
+            "exited": false
+        },
+        {
+            "deviceId": "99011FFBA000PK",
+            "name": "com.DefaultCompany.ConstellationsAR",
+            "processId": 29940,
+            "exited": false
+        },
+        {
+            "deviceId": "99011FFBA000PK",
+            "name": "com.DefaultCompany.ConstellationsAR",
+            "processId": 6567,
+            "exited": false
+        },
+        {
+            "deviceId": "99011FFBA000PK",
+            "name": "com.DefaultCompany.ConstellationsAR",
+            "processId": 14009,
             "exited": false
         }
     ],

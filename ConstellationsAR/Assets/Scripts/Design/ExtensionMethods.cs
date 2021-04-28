@@ -6,7 +6,7 @@ using System.IO;
 using System.Text;
 using System;
 
-public static class ExtensionMethod
+public static class ExtensionMethods
 {
     public static void ForEach<T>(this IEnumerable<T> source, System.Action<T> action)
     {

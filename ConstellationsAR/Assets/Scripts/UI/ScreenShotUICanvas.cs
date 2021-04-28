@@ -9,6 +9,7 @@ using TMPro;
 public class ScreenShotUICanvas : UIWindow
 {
     public GameObject HomeCanvas;
+    public WholeUICanvas parentUI;
 
     public Button bttn4Screenshot;
     public Button bttn4CloseScreenshotCanvas;
@@ -17,6 +18,10 @@ public class ScreenShotUICanvas : UIWindow
 
     void Start()
     {
+        Canvas thisCanvas = GetComponent<Canvas>();
+        thisCanvas.worldCamera = Camera.main;
+        thisCanvas.planeDistance = 1;
+
         CountText.gameObject.SetActive(false);
     }
     void Awake() 
@@ -38,6 +43,7 @@ public class ScreenShotUICanvas : UIWindow
     {
         this.gameObject.SetActive(false);
         HomeCanvas.SetActive(true);
+        parentUI.OnHomeUIOpened();
     }
     IEnumerator Wait()
     {

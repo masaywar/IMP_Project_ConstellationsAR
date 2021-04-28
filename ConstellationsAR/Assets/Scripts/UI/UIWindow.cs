@@ -4,19 +4,24 @@ using UnityEngine;
 
 public class UIWindow : MonoBehaviour
 {
-    private UIManager cachedUIManager;
-
-    private void Awake()
+    public bool IsOpened() 
     {
-        //All UI will be added to Dictionary of UIManager.
-        //You can access any UIWindow with UIManager Dictionary.
-
-        cachedUIManager = UIManager.Instance;
-        if (!cachedUIManager.uiWindowDict.ContainsKey(this.name))
+        if (gameObject.activeSelf)
         {
-            cachedUIManager.uiWindowDict.Add(this.name, this);
+            return true;
         }
+
+        return false;
     }
 
+    public void Open()
+    {
+        gameObject.SetActive(true);
+    }
+
+    public void Close()
+    { 
+        gameObject.SetActive(false);
+    }
     // If touch event is existed, implement event method on class which inherit this class. 
 }

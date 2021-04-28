@@ -1,8 +1,7 @@
 using UnityEngine;
 using System.Linq;
 
-[CreateAssetMenu(menuName = "ConstellationsAR/database/star database")]
-public class StarDatabaseLoader : DatabaseLoader
+public class StarDatabaseLoader : Singleton<StarDatabaseLoader>
 {
     public string path;
     [HideInInspector]
@@ -10,7 +9,7 @@ public class StarDatabaseLoader : DatabaseLoader
 
     public int leng;
 
-    public override void OnDatabaseLoad()
+    public void OnDatabaseLoad()
     {
         string[] lines = IOUtility.OpenLines(path);
         stars = lines.

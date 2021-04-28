@@ -27,12 +27,6 @@ public class MeshPrefabGenerator : AssetGenerator
         go.AddComponent<MeshFilter>().mesh = mesh;
         Material m = go.AddComponent<MeshRenderer>().material = material;
 
-        Debug.Log(this.name);
-        if (this.name == "ConstellationPrefabGenerator")
-        {
-            ConstellationObject addedGo = go.AddComponent<ConstellationObject>();
-        }
-
         return go;
     }
 }

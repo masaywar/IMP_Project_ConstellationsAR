@@ -6,16 +6,18 @@ using System.Linq;
 [CreateAssetMenu(menuName = "ConstellationsAR/AssetGenerator/StarMesh")]
 public class StarMeshGenerator : AssetGenerator
 {
-    public StarDatabaseLoader m_cachedStarDBLoader;
+    public StarDatabaseLoader cachedStarDBLoader;
     [Range(2000, 30000)]
     public int starsPerMesh = 10000;
     protected override void GenerateAsset()
     {
+        cachedStarDBLoader = (StarDatabaseLoader)StarDatabaseLoader.Instance;
+
 #if UNITY_EDITOR
-        for (int i = 0; i < m_cachedStarDBLoader.stars.Length; i += starsPerMesh)
+        for (int i = 0; i < cachedStarDBLoader.stars.Length; i += starsPerMesh)
         {
             string name = "stars " + (i / starsPerMesh);
-            StarData[] subStars = m_cachedStarDBLoader.stars.SubArray(i, starsPerMesh).ToArray();
+            StarData[] subStars = cachedStarDBLoader.stars.SubArray(i, starsPerMesh).ToArray();
             var mesh = CreateMesh(subStars, name);
             AssetUtility.SaveMeshAsset(folderPath, mesh);
         }

@@ -37,7 +37,7 @@ public class StarData
             ParseUtiltiy.SafeFloatParse(lines[17]),
             ParseUtiltiy.SafeFloatParse(lines[18]),
             ParseUtiltiy.SafeFloatParse(lines[19])
-        );
+        ).normalized;
 
         velocity = new Vector3(
             ParseUtiltiy.SafeFloatParse(lines[20]),

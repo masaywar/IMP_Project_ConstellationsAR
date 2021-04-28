@@ -10,7 +10,8 @@ public abstract class AssetGenerator:ScriptableObject
     public void Generate()
     {
 #if UNITY_EDITOR
-        AssetUtility.ClearAssetFolder(folderPath);
+        if (this.name != "ConstellationOverlayPrefabGenerator")
+            AssetUtility.ClearAssetFolder(folderPath);
 #endif
         GenerateAsset();
     }

@@ -8,7 +8,8 @@ using TMPro;
 
 
 public class HomeUICanvas : UIWindow
-{   
+{
+    public WholeUICanvas parentUI;
     public GameObject InformationCanvas;
     public GameObject ScreenShotCanvas;
 
@@ -25,7 +26,11 @@ public class HomeUICanvas : UIWindow
 
     void Start()
     {
-        JsonData = GamaManager.Instance.datas;
+        JsonData = GameManager.Instance.datas;
+        Canvas thisCanvas = GetComponent<Canvas>();
+
+        thisCanvas.worldCamera = Camera.main;
+        thisCanvas.planeDistance = 1;
     }
 
     void Awake() 
@@ -67,11 +72,14 @@ public class HomeUICanvas : UIWindow
             }
         }
 
+        parentUI.OnInfoUIOpened();
+
     }
     private void OpenScreenShotCanvas()
     {
         this.gameObject.SetActive(false);
         ScreenShotCanvas.SetActive(true);
+        parentUI.OnScreenShotOpened();
     }
 
     /*

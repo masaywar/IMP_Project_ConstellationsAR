@@ -17,8 +17,8 @@ Mesh:
     firstVertex: 0
     vertexCount: 24
     localAABB:
-      m_Center: {x: -84.32806, y: -286.62286, z: -270.78384}
-      m_Extent: {x: 80.926704, y: 271.22717, z: 259.77725}
+      m_Center: {x: -0.25088468, y: -0.7674408, z: -0.5119365}
+      m_Extent: {x: 0.20948407, y: 0.058971018, z: 0.17310904}
   m_Shapes:
     vertices: []
     shapes: []
@@ -97,7 +97,7 @@ Mesh:
       format: 0
       dimension: 0
     m_DataSize: 288
-    _typelessdata: 7f6380c1f2bf0ac3bf4cd3c2c68f0cc1f97ee5c2e795bac2c68f0cc1f97ee5c2e795bac2affac3c1e8e2e1c3f8acbec3affac3c1e8e2e1c3f8acbec305eed4c0850886c2a82f7bc205eed4c0850886c2a82f7bc2a3af59c0507080c191ea76c1a3af59c0507080c191ea76c1384125c367760bc4e9a304c4384125c367760bc4e9a304c448bb0dc2f752e7c2d757bdc248bb0dc2f752e7c2d757bdc200f39ac0b55476c1191b30c100f39ac0b55476c1191b30c113d737c2fc17efc2e57089c213d737c2fc17efc2e57089c2a02b6ac2be4e0cc3482697c2a02b6ac2be4e0cc3482697c24caa8ac2f5fbf0c2bcb667c2a02b6ac2be4e0cc3482697c2609aa2c205340bc3f60b9ec2a02b6ac2be4e0cc3482697c295865fc23aa4ccc2b4f127c2
+    _typelessdata: 6aacbbbda8d14abf536f1abf08e472bde64846bfc93521bf08e472bde64846bfc93521bfb49329bd7c7443bfe7fc24bfb49329bd7c7443bfe7fc24bfa7fe93bd29513abfa0952ebfa7fe93bd29513abfa0952ebf6a9c1abe517236bf255f2fbf6a9c1abe517236bf255f2fbf1be956be465e35bffe7e2cbf1be956be465e35bffe7e2cbf5e346cbe10c240bfafc61dbf5e346cbe10c240bfafc61dbfb1d17dbe38c149bfd83c10bfb1d17dbe38c149bfd83c10bfa2e5a1be358e52bf7612f2bea2e5a1be358e52bf7612f2beb88bb0beb98f53bfcbe8e3beb88bb0beb98f53bfcbe8e3be74b5ebbe41d14cbf34f0c4beb88bb0beb98f53bfcbe8e3bee5dbe7be207e46bfae5ce1beb88bb0beb98f53bfcbe8e3bea9e4e6bef76253bfcb7aadbe
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -151,8 +151,8 @@ Mesh:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
-    m_Center: {x: -84.32806, y: -286.62286, z: -270.78384}
-    m_Extent: {x: 80.926704, y: 271.22717, z: 259.77725}
+    m_Center: {x: -0.25088468, y: -0.7674408, z: -0.5119365}
+    m_Extent: {x: 0.20948407, y: 0.058971018, z: 0.17310904}
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 

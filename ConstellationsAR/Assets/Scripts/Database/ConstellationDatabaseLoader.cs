@@ -4,16 +4,17 @@ using System.Text.RegularExpressions;
 using System.Linq;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ConstellationsAR/database/constellations")]
-public class ConstellationDatabaseLoader : DatabaseLoader
+public class ConstellationDatabaseLoader : Singleton<ConstellationDatabaseLoader>
 {
     public string folderPath;
     public ConstellationData[] constellations;
     public StarDatabaseLoader starDatabaseLoader;
 
-    public override void OnDatabaseLoad() {
+    public void OnDatabaseLoad() {
         var names = GetNames();
+
         var constellationsPath = folderPath + "/constellationship.fab";
+
         constellations = IOUtility.OpenLines(constellationsPath).
             Select(l=> new ConstellationData(l, starDatabaseLoader))
             .ToArray();

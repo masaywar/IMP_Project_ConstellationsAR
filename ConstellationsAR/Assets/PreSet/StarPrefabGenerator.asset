@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4556958eba23d3c44b747fb8790eebe1, type: 3}
   m_Name: StarPrefabGenerator
   m_EditorClassIdentifier: 
-  folderPath: Assets/PreSet/PrefabG
+  folderPath: Assets/Resources/Prefabs/Stars
   meshGenerator: {fileID: 11400000, guid: bbe542a7848579444a0629abacec112a, type: 2}
   prefabName: StarPrefab
   material: {fileID: 2100000, guid: 0a4f73ca407dfc5438771b316fb9b615, type: 2}
