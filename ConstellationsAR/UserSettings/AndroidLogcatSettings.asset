@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "99011FFBA000PK",
         "name": "com.DefaultCompany.ConstellationsAR",
-        "processId": 14009,
+        "processId": 19622,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -228,6 +228,12 @@
             "deviceId": "99011FFBA000PK",
             "name": "com.DefaultCompany.ConstellationsAR",
             "processId": 14009,
+            "exited": false
+        },
+        {
+            "deviceId": "99011FFBA000PK",
+            "name": "com.DefaultCompany.ConstellationsAR",
+            "processId": 19622,
             "exited": false
         }
     ],
