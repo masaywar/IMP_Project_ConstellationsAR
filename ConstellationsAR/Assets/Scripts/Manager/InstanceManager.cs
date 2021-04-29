@@ -26,7 +26,6 @@ public class InstanceManager : Singleton<InstanceManager>
 #if UNITY_EDITOR
         StarDatabaseLoader.Instance.OnDatabaseLoad();
         ConstellationDatabaseLoader.Instance.OnDatabaseLoad();
-#endif
 
         starMeshGenerator.Generate();
         constellationMeshGenerator.Generate();
@@ -35,7 +34,7 @@ public class InstanceManager : Singleton<InstanceManager>
         constellationPrefabGenerator.Generate();
 
         constellationOverlayPrefabGenerator.Generate();
-
+#endif
         InstantiatePrefab();
     }
 
@@ -55,8 +54,12 @@ public class InstanceManager : Singleton<InstanceManager>
         var constellationPrefab = Resources.LoadAll<GameObject>(constellationPrefabGenerator.folderPath.Replace($"Assets/Resources/", ""))[0];
         constellationsInstance = GameObject.Instantiate(constellationPrefab, Vector3.zero, Quaternion.identity);
 
-        var constellationOverlayPrefab = Resources.Load<GameObject>("Prefabs/UIPrefab");
-        Instantiate(constellationOverlayPrefab, Vector3.zero, Quaternion.identity);
+        if (GameObject.Find("UIPrefab") == null)
+        {
+            var constellationOverlayPrefab = Resources.Load<GameObject>("Prefabs/UIPrefab");
+            Instantiate(constellationOverlayPrefab, Vector3.zero, Quaternion.identity);
+        }
+
     }
 
 

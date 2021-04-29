@@ -13,6 +13,8 @@ UnityGenerated/
 Library/
 
 Logs/
+
+UserSettings/
  
  # Unity3D generated meta files 
 *.pidb.meta

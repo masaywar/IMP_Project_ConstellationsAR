@@ -16,11 +16,8 @@ public class GameManager : Singleton<GameManager>
 
     private void Awake()
     {
-        InstanceManager.Instance.GenerateAndInstantiatePrefab();
         ConstellationJsonDataArray c = new ConstellationJsonDataArray();
         datas = c.data;
-
-       
     }
 
     private void Update()
