@@ -8,12 +8,12 @@ public class MainMenu : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+        GameManager.Instance.loadingState = GameManager.LoadingState.load;
     }
 
     public void QuitGame()
     {
         Debug.Log("Quitting");
-        Application.Quit();
+        GameManager.Instance.loadingState = GameManager.LoadingState.end;
     }
 }
