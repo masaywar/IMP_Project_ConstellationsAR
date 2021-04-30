@@ -8,11 +8,21 @@ public class GameManager : Singleton<GameManager>
     public ConstellationJsonDataArray.Data[] datas;
     public StarDatabaseLoader starDatabaseLoader;
 
-    private enum LoadingState { 
-        init, load,inGame,  end
+    public enum LoadingState {
+        init, load, inGame, end
     }
 
-    LoadingState loadingState = LoadingState.init;
+    private LoadingState _loadingState = LoadingState.init;
+
+    public LoadingState loadingState
+    {
+        set {
+            _loadingState = value;
+        }
+        get {
+            return _loadingState;
+        }
+    }
 
     private void Awake()
     {
@@ -25,16 +35,18 @@ public class GameManager : Singleton<GameManager>
         switch (loadingState)
         {
             case LoadingState.init:
-                loadingState = LoadingState.load;
-                print(loadingState);
                 break;
 
             case LoadingState.load:
-                InstanceManager.Instance.GenerateAndInstantiatePrefab();
                 loadingState = LoadingState.inGame;
+
+                int loadingScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex;
+                UnityEngine.SceneManagement.SceneManager.LoadScene(loadingScene + 1);
                 break;
 
             case LoadingState.inGame:
+                InstanceManager.Instance.GenerateAndInstantiatePrefab();
+                loadingState = LoadingState.init;
                 break;
 
             case LoadingState.end:

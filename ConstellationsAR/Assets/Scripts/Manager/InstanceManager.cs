@@ -24,16 +24,16 @@ public class InstanceManager : Singleton<InstanceManager>
     public void GenerateAndInstantiatePrefab()
     {
 #if UNITY_EDITOR
-        StarDatabaseLoader.Instance.OnDatabaseLoad();
-        ConstellationDatabaseLoader.Instance.OnDatabaseLoad();
+        //StarDatabaseLoader.Instance.OnDatabaseLoad();
+        //ConstellationDatabaseLoader.Instance.OnDatabaseLoad();
 
-        starMeshGenerator.Generate();
-        constellationMeshGenerator.Generate();
+        //starMeshGenerator.Generate();
+        //constellationMeshGenerator.Generate();
 
-        starPrefabGenerator.Generate();
-        constellationPrefabGenerator.Generate();
+        //starPrefabGenerator.Generate();
+        //constellationPrefabGenerator.Generate();
 
-        constellationOverlayPrefabGenerator.Generate();
+        //constellationOverlayPrefabGenerator.Generate();
 #endif
         InstantiatePrefab();
     }
@@ -48,17 +48,15 @@ public class InstanceManager : Singleton<InstanceManager>
         if (constellationOverlayInstance != null)
             GameObject.DestroyImmediate(constellationOverlayInstance);
 
-        var starPrefab = Resources.LoadAll<GameObject>(starPrefabGenerator.folderPath.Replace($"Assets/Resources/", ""))[0];
+        var starPrefab = Resources.LoadAll<GameObject>("Prefabs/Stars")[0];
         starsInstance = Instantiate(starPrefab, Vector3.zero, Quaternion.identity);
 
-        var constellationPrefab = Resources.LoadAll<GameObject>(constellationPrefabGenerator.folderPath.Replace($"Assets/Resources/", ""))[0];
+        var constellationPrefab = Resources.LoadAll<GameObject>("Prefabs/Constellations")[0];
         constellationsInstance = GameObject.Instantiate(constellationPrefab, Vector3.zero, Quaternion.identity);
 
-        if (GameObject.Find("UIPrefab") == null)
-        {
-            var constellationOverlayPrefab = Resources.Load<GameObject>("Prefabs/UIPrefab");
-            Instantiate(constellationOverlayPrefab, Vector3.zero, Quaternion.identity);
-        }
+       
+        var constellationOverlayPrefab = Resources.Load<GameObject>("Prefabs/UIPrefab");
+        Instantiate(constellationOverlayPrefab, Vector3.zero, Quaternion.identity);
 
     }
 
