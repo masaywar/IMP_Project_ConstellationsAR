@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
+    path: Assets/Scenes/TeleScope.unity
+    guid: 74ebd91fff65b89488c5ed4e69d73d10
+  - enabled: 1
     path: Assets/Scenes/ARMainScene.unity
     guid: 6bdce89659816455b9f906fc62d19910
   m_configObjects:
