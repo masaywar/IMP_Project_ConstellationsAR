@@ -67,6 +67,7 @@ public class HomeUICanvas : UIWindow
             {   
                 SessionDetail.text = data.period;
                 StoryDetail.text = data.story;
+                
                 string path = "Pictures/" + data.name;
                 ConstellationImage.sprite = Resources.Load<Sprite>(path) as Sprite;
             }
