@@ -32,8 +32,6 @@ public class InteratableObject : MonoBehaviour
 
             if (Physics.Raycast(Camera.main.ScreenPointToRay(touchPos), out var hit))
             {
-                print(hit.collider.name);
-
                 OnClick("OnClick"+hit.collider.name);
             }
         }
@@ -42,6 +40,17 @@ public class InteratableObject : MonoBehaviour
     private void OnClick(string methodName)
     {
         Invoke(methodName, 0);
+    }
+
+    private void OnClickRespawn()
+    {
+        gameObject.SetActive(false);
+        Invoke("InvokePlaneDetect", 0.3f);
+    }
+
+    private void InvokePlaneDetect()
+    {
+        FindObjectOfType<PlaneIndicator>().EnablePlaneDetection();
     }
 
     private void OnClickStart()

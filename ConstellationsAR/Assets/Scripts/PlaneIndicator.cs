@@ -15,22 +15,25 @@ public class PlaneIndicator : MonoBehaviour
 
     public GameObject PrefabToSpawn;
     private GameObject spawned = null;
-    private bool isSpawned = false;
-
+    private ARPlaneManager planeManager;
 
     // Start is called before the first frame update
     void Start()
     {
         rayManger = FindObjectOfType<ARRaycastManager>();
+        planeManager = FindObjectOfType<ARPlaneManager>();
+
         indicator = transform.GetChild(0).gameObject;
         indicator.SetActive(false);
+
+        spawned = Instantiate(PrefabToSpawn);
+        spawned.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-        if (!isSpawned)
+        if (planeManager.enabled)
         {
 
             rayManger.Raycast(new Vector2(Screen.width / 2, Screen.height / 2), hits, TrackableType.PlaneWithinPolygon); // Set indicator in middle of screen
@@ -52,21 +55,24 @@ public class PlaneIndicator : MonoBehaviour
                 indicator.SetActive(false);
             }
 
-            if (GetTouchPosition(out Vector2 touchPosition))
+            if (Input.touchCount > 0 && indicator.activeInHierarchy)
             {
-                if (spawned == null)
-                {
-                    spawned = Instantiate(PrefabToSpawn, transform.position, transform.rotation);
-                }
-                else
-                {
-                    spawned.transform.position = hits[0].pose.position;
-                }
-
-                isSpawned = true;
-                indicator.SetActive(false);
+                spawned.transform.position = transform.position;
+                spawned.SetActive(true);
+                DisablePlaneDetection();
             }
         }
+    }
+
+    public void DisablePlaneDetection()
+    {
+        planeManager.enabled = false;
+        indicator.SetActive(false);
+    }
+
+    public void EnablePlaneDetection()
+    {
+        planeManager.enabled = true;
     }
 
     bool GetTouchPosition(out Vector2 touchPosition)

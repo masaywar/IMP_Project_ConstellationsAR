@@ -31,4 +31,9 @@ public class SettingEvent : MonoBehaviour
     {
         cachedCamera.fieldOfView = FOV - FOVSlider.value;
     }
+
+    public void OnAudioSlide()
+    { 
+    
+    }
 }
