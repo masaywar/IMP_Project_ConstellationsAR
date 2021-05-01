@@ -9,7 +9,7 @@ public class GameManager : Singleton<GameManager>
     public StarDatabaseLoader starDatabaseLoader;
 
     public enum LoadingState {
-        init, load, inGame, end
+        init, tele ,load, inGame, end
     }
 
     private LoadingState _loadingState = LoadingState.init;
@@ -24,6 +24,8 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
+    public float scaleSize = 1f;
+
     private void Awake()
     {
         ConstellationJsonDataArray c = new ConstellationJsonDataArray();
@@ -35,6 +37,17 @@ public class GameManager : Singleton<GameManager>
         switch (loadingState)
         {
             case LoadingState.init:
+                break;
+
+            case LoadingState.tele:
+#if UNITY_EDITOR
+                loadingState = LoadingState.load;
+                UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
+                break;
+#endif
+
+                loadingState = LoadingState.init;
+                UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex+1);
                 break;
 
             case LoadingState.load:

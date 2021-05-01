@@ -19,7 +19,7 @@ public class ScreenShotUICanvas : UIWindow
     void Start()
     {
         Canvas thisCanvas = GetComponent<Canvas>();
-        thisCanvas.worldCamera = Camera.main;
+        thisCanvas.worldCamera = Camera.allCameras[1];
         thisCanvas.planeDistance = 1;
 
         CountText.gameObject.SetActive(false);

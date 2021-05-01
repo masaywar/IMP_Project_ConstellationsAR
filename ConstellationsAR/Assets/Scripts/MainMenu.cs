@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
 {
     public void StartGame()
     {
-        GameManager.Instance.loadingState = GameManager.LoadingState.load;
+        GameManager.Instance.loadingState = GameManager.LoadingState.tele;
     }
 
     public void QuitGame()

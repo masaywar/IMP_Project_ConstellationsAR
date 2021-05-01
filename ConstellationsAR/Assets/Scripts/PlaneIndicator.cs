@@ -14,7 +14,9 @@ public class PlaneIndicator : MonoBehaviour
     private List<ARRaycastHit> hits = new List<ARRaycastHit>();
 
     public GameObject PrefabToSpawn;
-    private GameObject spawned;
+    private GameObject spawned = null;
+    private bool isSpawned = false;
+
 
     // Start is called before the first frame update
     void Start()
@@ -27,34 +29,42 @@ public class PlaneIndicator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rayManger.Raycast(new Vector2(Screen.width/2, Screen.height/2), hits, TrackableType.PlaneWithinPolygon); // Set indicator in middle of screen
         
-        // hit something
-        if(hits.Count >0)
+        if (!isSpawned)
         {
-            if(!indicator.activeInHierarchy)
-            {
-                indicator.SetActive(true);
-            }
 
-            transform.position = hits[0].pose.position;
-            transform.rotation = hits[0].pose.rotation;
-            indicator.transform.Rotate(0, 45 *Time.deltaTime,0, Space.World);
-        }
-        else 
-        {
-            indicator.SetActive(false);
-        }
+            rayManger.Raycast(new Vector2(Screen.width / 2, Screen.height / 2), hits, TrackableType.PlaneWithinPolygon); // Set indicator in middle of screen
 
-        if(GetTouchPosition(out Vector2 touchPosition))
-        {
-            if(spawned == null)
+            // hit something
+            if (hits.Count > 0)
             {
-                spawned = Instantiate(PrefabToSpawn, transform.position, transform.rotation); 
+                if (!indicator.activeInHierarchy)
+                {
+                    indicator.SetActive(true);
+                }
+
+                transform.position = hits[0].pose.position;
+                transform.rotation = hits[0].pose.rotation;
+                indicator.transform.Rotate(0, 45 * Time.deltaTime, 0, Space.World);
             }
             else
             {
-                spawned.transform.position = hits[0].pose.position;
+                indicator.SetActive(false);
+            }
+
+            if (GetTouchPosition(out Vector2 touchPosition))
+            {
+                if (spawned == null)
+                {
+                    spawned = Instantiate(PrefabToSpawn, transform.position, transform.rotation);
+                }
+                else
+                {
+                    spawned.transform.position = hits[0].pose.position;
+                }
+
+                isSpawned = true;
+                indicator.SetActive(false);
             }
         }
     }

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - UI
   - Telescope
+  - SubCamera
   layers:
   - Default
   - TransparentFX

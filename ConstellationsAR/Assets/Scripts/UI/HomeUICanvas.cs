@@ -29,7 +29,7 @@ public class HomeUICanvas : UIWindow
         JsonData = GameManager.Instance.datas;
         Canvas thisCanvas = GetComponent<Canvas>();
 
-        thisCanvas.worldCamera = Camera.main;
+        thisCanvas.worldCamera = Camera.allCameras[1];
         thisCanvas.planeDistance = 1;
     }
 
@@ -37,16 +37,13 @@ public class HomeUICanvas : UIWindow
     {           
         for (int i = 0; i < this.transform.childCount; i++)
         {
-            bttn4OpenInfo.Add(this.transform.GetChild(i).GetComponent<Button>());
+            if (this.transform.GetChild(i).TryGetComponent<Button>(out var button))
+                bttn4OpenInfo.Add(button);
         }
-        
-        for (int i=0; i< bttn4OpenInfo.Count; i++)
-        {
-            if(bttn4OpenInfo[i].name == "ToScreenshotButton")
-            {
-                bttn4OpenInfo.RemoveAt(i);
-            }
-        }
+
+        int screenbttnIndex = bttn4OpenInfo.FindIndex(button=>button.name == "ToScreenshotButton");
+
+        bttn4OpenInfo.RemoveAt(screenbttnIndex);
 
         foreach (Button button in bttn4OpenInfo)
         {
