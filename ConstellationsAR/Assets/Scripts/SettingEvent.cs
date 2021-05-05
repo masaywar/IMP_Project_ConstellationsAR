@@ -16,16 +16,30 @@ public class SettingEvent : MonoBehaviour
 
     private void Awake()
     {
-        cachedCamera = Camera.allCameras[1];
-        FOV = 45;
-        cachedCamera.fieldOfView = FOV;
+        SetAttrFOVSlider();
+        SetAttrAudioSlider();
+    }
+
+    private void SetAttrFOVSlider()
+    {
+        if (FOVSlider != null)
+        {
+            cachedCamera = Camera.allCameras[1];
+            FOV = 45;
+            cachedCamera.fieldOfView = FOV;
 
 
-        FOVSlider.minValue = -15f;
-        FOVSlider.maxValue = 15f;
+            FOVSlider.minValue = -15f;
+            FOVSlider.maxValue = 15f;
 
-        FOVSlider.value = 0;
-    }   
+            FOVSlider.value = 0;
+        }
+    }
+
+    private void SetAttrAudioSlider()
+    {
+        audioSlider.value = 0.5f;
+    }
 
     public void OnFOVSlide()
     {
@@ -33,7 +47,7 @@ public class SettingEvent : MonoBehaviour
     }
 
     public void OnAudioSlide()
-    { 
-    
+    {
+        AudioManager.Instance.SetVolumne(audioSlider.value);
     }
 }

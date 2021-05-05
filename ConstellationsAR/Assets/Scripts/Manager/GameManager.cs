@@ -29,6 +29,9 @@ public class GameManager : Singleton<GameManager>
     private void Awake()
     {
         ConstellationJsonDataArray c = new ConstellationJsonDataArray();
+
+        AudioManager.Instance.OnPlayAudio("the night sky");
+
         datas = c.data;
     }
 
@@ -48,6 +51,8 @@ public class GameManager : Singleton<GameManager>
 
                 loadingState = LoadingState.init;
                 UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex+1);
+
+                AudioManager.Instance.OnPlayAudio("Nature");
                 break;
 
             case LoadingState.load:
@@ -59,6 +64,7 @@ public class GameManager : Singleton<GameManager>
 
             case LoadingState.inGame:
                 InstanceManager.Instance.GenerateAndInstantiatePrefab();
+                AudioManager.Instance.OnPlayAudio("the night sky");
                 loadingState = LoadingState.init;
                 break;
 
